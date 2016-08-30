@@ -1,0 +1,17 @@
+function x = newState(s,a)
+global up right left down target
+up = 1;
+
+if a == up 
+    x = s + N;
+elseif a == left
+x = s - 1;
+elseif a == down 
+    x = s - N;
+elseif a == right
+    x = s + 1;
+elseif a == target
+    x = s;
+end
+end
+
